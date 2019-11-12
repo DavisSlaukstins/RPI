@@ -23,6 +23,8 @@ try:
         if button_state1 == GPIO.LOW:
             GPIO.output(4,GPIO.HIGH)
             GPIO.output(25,GPIO.HIGH)
+            time.sleep(0.5)
+            GPIO.output(25,GPIO.LOW)
         if button_state2 == GPIO.LOW:
             GPIO.output(17,GPIO.HIGH)
         if button_state3 == GPIO.LOW:
