@@ -55,6 +55,9 @@ try:
         if  button_state1 == GPIO.LOW and button_state2 == GPIO.LOW or  button_state1 == GPIO.LOW and button_state3 == GPIO.LOW or button_state3 == GPIO.LOW and button_state2 == GPIO.LOW:
             pepe = random.choice(lists)
             if pepe == "a":
+                GPIO.output(4,GPIO.LOW)
+                GPIO.output(17,GPIO.LOW)
+                GPIO.output(27,GPIO.LOW)
                 GPIO.output(4,GPIO.HIGH)
                 GPIO.output(27,GPIO.HIGH)
                 time.sleep(0.1)
@@ -65,6 +68,9 @@ try:
                 GPIO.output(27,GPIO.HIGH)
                 time.sleep(0.1)
             if pepe == "b":
+                GPIO.output(4,GPIO.LOW)
+                GPIO.output(17,GPIO.LOW)
+                GPIO.output(27,GPIO.LOW)
                 GPIO.output(4,GPIO.HIGH)
                 GPIO.output(17,GPIO.HIGH)
                 time.sleep(0.1)
@@ -75,6 +81,9 @@ try:
                 GPIO.output(17,GPIO.HIGH)
                 time.sleep(0.1)
             if pepe == "c":
+                GPIO.output(4,GPIO.LOW)
+                GPIO.output(17,GPIO.LOW)
+                GPIO.output(27,GPIO.LOW)
                 GPIO.output(17,GPIO.HIGH)
                 GPIO.output(27,GPIO.HIGH)
                 time.sleep(0.1)
