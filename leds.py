@@ -7,6 +7,7 @@ GPIO.setwarnings(False)
 GPIO.setup(4,GPIO.OUT)
 GPIO.setup(17,GPIO.OUT)
 GPIO.setup(27,GPIO.OUT)
+GPIO.setup(25,GPIO.OUT)
 
 GPIO.setup(22, GPIO.IN, GPIO.PUD_UP)
 GPIO.setup(23, GPIO.IN, GPIO.PUD_UP)
@@ -21,6 +22,7 @@ try:
 
         if button_state1 == GPIO.LOW:
             GPIO.output(4,GPIO.HIGH)
+            GPIO.output(25,GPIO.HIGH)
         if button_state2 == GPIO.LOW:
             GPIO.output(17,GPIO.HIGH)
         if button_state3 == GPIO.LOW:
