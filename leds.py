@@ -14,6 +14,7 @@ GPIO.setup(23, GPIO.IN, GPIO.PUD_UP)
 GPIO.setup(24, GPIO.IN, GPIO.PUD_UP)
 try:
     while True:
+        GPIO.output(25,GPIO.LOW)
         button_state1 = GPIO.input(22)
         button_state2 = GPIO.input(23)
         button_state3 = GPIO.input(24)
