@@ -113,8 +113,6 @@ notes = {
 
 
 
-lol_melody = [notes['AS1'], notes['A1'], notes['GS1'], notes['FS1']]
-lol_tempo = [4, 4, 5, 8]
 
 star_wars_melody = [ 
 					notes['G7'], notes['G7'], notes['G7'], 
@@ -267,8 +265,6 @@ if __name__ == '__main__':		# Program start from here
 		
 		
 		
-		play(lol_wars_melody, lol_tempo, 0.50, 1.000)
-		time.sleep(2)
 		
 		
 		play(star_wars_melody, star_wars_tempo, 0.50, 1.000)
