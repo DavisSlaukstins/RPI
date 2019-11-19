@@ -116,20 +116,20 @@ notes = {
 
 
 star_wars_melody = [ 
-					notes['G4'], notes['G4'], notes['G4'], 
-					notes['EB4'], 0, notes['BB4'], notes['G4'], 
-					notes['EB4'], 0, notes['BB4'], notes['G4'], 0,
+					notes['G7'], notes['G7'], notes['G7'], 
+					notes['EB7'], 0, notes['BB7'], notes['G7'], 
+					notes['EB7'], 0, notes['BB7'], notes['G7'], 0,
 					
-					notes['D4'], notes['D4'], notes['D4'], 
-					notes['EB4'], 0, notes['BB3'], notes['FS3'],
-					notes['EB3'], 0, notes['BB3'], notes['G3'], 0,
+					notes['D7'], notes['D7'], notes['D7'], 
+					notes['EB7'], 0, notes['BB6'], notes['FS6'],
+					notes['EB6'], 0, notes['BB6'], notes['G6'], 0,
 					
-					notes['G4'], 0, notes['G3'], notes['G3'], 0,
-					notes['G4'], 0, notes['FS4'], notes['F4'], 
-					notes['E4'], notes['EB4'], notes['E4'], 0,
-					notes['GS3'], notes['CS3'], 0, 
+					notes['G7'], 0, notes['G6'], notes['G6'], 0,
+					notes['G7'], 0, notes['FS7'], notes['F7'], 
+					notes['E7'], notes['EB7'], notes['E7'], 0,
+					notes['GS6'], notes['CS6'], 0, 
 					
-					notes['C3'], notes['B3'], notes['BB3'], notes['A3'], notes['BB3'], 0,
+					notes['C6'], notes['B3'], notes['BB3'], notes['A3'], notes['BB3'], 0,
 					notes['EB3'], notes['FS3'], notes['EB3'], notes['FS3'], 
 					notes['BB3'], 0, notes['G3'], notes['BB3'], notes['D4'], 0,
 					
@@ -269,17 +269,17 @@ if __name__ == '__main__':		# Program start from here
 		
 		
 		
-		
+		play(star_wars_melody, star_wars_tempo, 0.50, 1.000)
+		time.sleep(2)
 		
 		play(crazy_frog_melody, crazy_frog_tempo, 0.30, 0.900)
 		time.sleep(2)
 		
 		
 		
-		play(star_wars_melody, star_wars_tempo, 0.50, 1.000)
-		time.sleep(2)
+		
 
-		play(adventure_time_melody, adventure_time_tempo, 1.3, 1.500)
+		
 		
 		destroy()
 	except KeyboardInterrupt:  	# When 'Ctrl+C' is pressed, the child program destroy() will be  executed.
