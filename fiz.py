@@ -77,3 +77,4 @@ print(data.pressure)
 print(data.humidity)
 
 print(data)
+#beigas
