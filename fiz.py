@@ -12,14 +12,6 @@ data = bme280.sample(bus, address, calibration_params)
 
 #pieprasa vielas nosaukumu
 
-while True:
-    try:
-         print("")
-            w = str (input ("Gādā gāzē atradas mērinstruments : "))
-            break
-        except ValueError:
-             print("")
-            print("Tāda vērtība nestrādā")
 
 #pieprasa tilpumu
 
