@@ -12,28 +12,30 @@ data = bme280.sample(bus, address, calibration_params)
 
 #pieprasa vielas nosaukumu
 
+while True:
+    try:
+        w = str (input ("Gādā gāzē atradas mērinstruments : "))
+        break
+    except ValueError:
+        print("Tāda vērtība nestrādā")
 
 #pieprasa tilpumu
 
 while True:
     try:
-         print("")
-            v = float (input ("Ievadi trauka/telpas tilpumu : "))
-            break
-        except ValueError:
-             print("")
-            print("Tāda vērtība nestrādā")
+        v = float (input ("Ievadi trauka/telpas tilpumu : "))
+        break
+    except ValueError:
+        print("Tāda vērtība nestrādā")
 
 #pieprasa vielas molmasu
 
 while True:
     try:
-         print("")
-            M = float (input ("Ievadi gāzes molmasu : "))
-            break
-        except ValueError:
-             print("")
-            print("Tāda vērtība nestrādā")
+        M = float (input ("Ievadi gāzes molmasu : "))
+        break
+    except ValueError:
+        print("Tāda vērtība nestrādā")
 
 # w = vielas nosaukums, v = tilpums, m = molmasa.
 #tilpums *spiediens = masa/ mol masa * konstante *temperatura
@@ -69,4 +71,3 @@ print(data.pressure)
 print(data.humidity)
 
 print(data)
-#beigas
