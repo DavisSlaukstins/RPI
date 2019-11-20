@@ -51,7 +51,7 @@ p = data.pressure
 #veicu apreikinus
 
 m1 = v*p
-m2 = k*t
+m2 = r*t
 m3 = m1/m2
 m = m3/M
 v2 = 3*r*t/M
