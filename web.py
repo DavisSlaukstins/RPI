@@ -19,7 +19,7 @@ def cakes():
 
 @app.route('/hello/<name>')
 def hello(name):
-    if name == "paul"
+    if name = "paul"
         GPIO.output(17,GPIO.HIGH)
         GPIO.output(27,GPIO.HIGH)
 
