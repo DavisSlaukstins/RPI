@@ -9,7 +9,7 @@ def index():
 
 @app.route('/cakes')
 def cakes():
-    return 'Yummy cakes!'
+    return render_template('cakesindex.html')
 
 
 if __name__ == '__main__':
