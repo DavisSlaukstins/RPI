@@ -25,11 +25,13 @@ def hello(name):
 
     return render_template('page.html', name=name)
 
+@app.route('/fuck/<name>')
+def hello(name):
+    if name == "garry":
+        GPIO.output(17,GPIO.LOW)
+        GPIO.output(27,GPIO.LOW)
 
-
-
-
-
+    return render_template('page2.html', name=name)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
