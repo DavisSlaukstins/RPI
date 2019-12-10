@@ -26,7 +26,7 @@ def hello(name):
     return render_template('page.html', name=name)
 
 @app.route('/fuck/<name>')
-def hello(name):
+def fuck(name):
     if name == "garry":
         GPIO.output(17,GPIO.LOW)
         GPIO.output(27,GPIO.LOW)
