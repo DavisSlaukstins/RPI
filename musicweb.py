@@ -41,6 +41,7 @@ import RPi.GPIO as GPIO
 import time
 from flask import Flask, render_template
 
+app = Flask(__name__)
 
 buzzer_pin = 27
 
@@ -615,9 +616,7 @@ def play(melody,tempo,pause,pace=0.800):
 if __name__ == '__main__':		# Program start from here
 	try:
 		setup()
-		
-        app = Flask(__name__)
-        
+
         @app.route('/')
         def index():
             return render_template('index.html')
