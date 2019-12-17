@@ -616,6 +616,7 @@ def play(melody,tempo,pause,pace=0.800):
 if __name__ == '__main__':		# Program start from here
 	try:
 		setup()
+        
         @app.route('/')
         def index():
             return render_template('index.html')
